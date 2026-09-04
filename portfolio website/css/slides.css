@@ -1,0 +1,107 @@
+/*pallete*/
+:root {
+    --primary-color: #B4D2E7;
+    --secondary-color: #94C5CC;
+    --accent-color: #000100;
+    --text-color: #F8F8F8;
+    --background-color: #A1A6B4;
+}
+
+/* Main slideshow container */
+.slideshow-container {
+    width: 500px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.my-slides {
+    display: none;
+}
+
+.my-slides img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background-color: var(--background-color);
+    display: block;
+}
+
+/* Navigation buttons (Prev/Next) */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a darker background */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Text caption */
+.caption-text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 16px;
+    text-align: center;
+    background-color: var(--accent-color);
+    position: static;
+    width: auto;
+}
+
+/* Dot styling container */
+.dots-container {
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Individual indicators/dots */
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #ffffff;
+    transform: scale(1.2);
+}
+
+/* Simple fade animation for transitions */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: .4 } 
+    to { opacity: 1 }
+}

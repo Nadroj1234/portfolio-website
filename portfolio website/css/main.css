@@ -1,0 +1,34 @@
+/*pallete*/
+:root {
+    --primary-color: #B4D2E7;
+    --secondary-color: #94C5CC;
+    --accent-color: #000100;
+    --text-color: #F8F8F8;
+    --background-color: #A1A6B4;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+header{
+    justify-content: space-between;
+    display: flex;
+
+    border: 4px solid var(--accent-color);
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+p, h1{
+    color: var(--text-color);
+}
+
+main{
+    
+    background-color: var(--secondary-color);
+
+    border: 4px solid var(--accent-color);
+    padding: 10px;
+}
