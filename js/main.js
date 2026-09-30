@@ -38,24 +38,30 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-// Optional: Uncomment the lines below to enable auto-play every 4 seconds
-// setInterval(function() {
-//     plusSlides(1);
-// }, 4000);
+ setInterval(function() {
+     plusSlides(1);
+ }, 4000);
 
-
-const images = document.querySelectorAll(".popup-image");
-const popup = document.getElementById("imagePopup");
+const popupImages = document.querySelectorAll(".popup-image");
+const imagePopup = document.getElementById("imagePopup");
 const popupImage = document.getElementById("popupImage");
+const closePopup = document.querySelector(".close-popup");
 
-images.forEach(image => {
-    image.addEventListener("click", () => {
+popupImages.forEach(function(image) {
+    image.addEventListener("click", function() {
         popupImage.src = image.src;
         popupImage.alt = image.alt;
-        popup.style.display = "flex";
+        imagePopup.style.display = "flex";
     });
 });
 
-popup.addEventListener("click", () => {
-    popup.style.display = "none";
+closePopup.addEventListener("click", function(event) {
+    event.stopPropagation();
+    imagePopup.style.display = "none";
+});
+
+imagePopup.addEventListener("click", function(event) {
+    if (event.target === imagePopup) {
+        imagePopup.style.display = "none";
+    }
 });
