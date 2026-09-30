@@ -61,11 +61,7 @@ li{
     gap: 10px;
 }
 
-.project-img{
-    width: 300px;
-    height: auto;
-    border: 4px solid var(--accent-color);
-}
+
 
 .popup-image {
     cursor: pointer;
