@@ -42,3 +42,20 @@ function showSlides(n) {
 // setInterval(function() {
 //     plusSlides(1);
 // }, 4000);
+
+
+const images = document.querySelectorAll(".popup-image");
+const popup = document.getElementById("imagePopup");
+const popupImage = document.getElementById("popupImage");
+
+images.forEach(image => {
+    image.addEventListener("click", () => {
+        popupImage.src = image.src;
+        popupImage.alt = image.alt;
+        popup.style.display = "flex";
+    });
+});
+
+popup.addEventListener("click", () => {
+    popup.style.display = "none";
+});

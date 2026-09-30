@@ -62,7 +62,35 @@ li{
 }
 
 .project-img{
-    width: 200px;
+    width: 300px;
     height: auto;
     border: 4px solid var(--accent-color);
+}
+
+.popup-image {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.popup-image:hover {
+    transform: scale(1.02);
+}
+
+/* Dark background */
+.image-popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Enlarged image */
+.image-popup img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
 }
