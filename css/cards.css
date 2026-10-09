@@ -12,6 +12,11 @@
     padding: 40px 24px;
 }
 
+.featured-projects-description{
+    color: var(--text-color);
+    font-size: 20px
+}
+
 .projects-heading {
     text-align: center;
     margin-bottom: 35px;
