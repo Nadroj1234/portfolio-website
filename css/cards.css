@@ -1,4 +1,10 @@
-
+:root {
+    --primary-color: #B4D2E7;
+    --secondary-color: #94C5CC;
+    --accent-color: #000100;
+    --text-color: #F8F8F8;
+    --background-color: #A1A6B4;
+}
 /* Featured Projects */
 .featured-projects {
     max-width: 1200px;
@@ -33,7 +39,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background: #fff;
+    background: var(--background-color);
     border: 1px solid #e5e5e5;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
@@ -52,7 +58,7 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
-    background: #eee;
+    background: var(--background-color);
 }
 
 /* Card content */
@@ -83,8 +89,8 @@
 }
 
 .project-tags span {
-    background: #edf2f7;
-    color: #26384a;
+    background: var(--background-color);
+    color: var(--text-color);
     padding: 6px 10px;
     border-radius: 5px;
     font-size: 0.8rem;
@@ -93,7 +99,7 @@
 /* Project links */
 .project-link {
     margin-top: auto;
-    color: #1769aa;
+    color: var(--primary-color);
     font-weight: bold;
     text-decoration: none;
 }
