@@ -1,0 +1,149 @@
+
+/* Featured Projects */
+.featured-projects {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px 24px;
+}
+
+.projects-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.projects-heading h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.projects-heading p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Project card grid */
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Individual cards */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Project images */
+.project-image {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: #eee;
+}
+
+/* Card content */
+.project-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px;
+}
+
+.project-content h3 {
+    margin: 0 0 12px;
+    font-size: 1.3rem;
+}
+
+.project-content p {
+    line-height: 1.6;
+    margin: 0 0 18px;
+}
+
+/* Technology labels */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.project-tags span {
+    background: #edf2f7;
+    color: #26384a;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+/* Project links */
+.project-link {
+    margin-top: auto;
+    color: #1769aa;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* All projects link */
+.all-projects {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.all-projects-link {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 2px solid #1769aa;
+    border-radius: 6px;
+    color: #1769aa;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s ease,
+                color 0.2s ease;
+}
+
+.all-projects-link:hover {
+    background: #1769aa;
+    color: #fff;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .project-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .featured-projects {
+        margin: 30px auto;
+        padding: 25px 16px;
+    }
+
+    .project-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 220px;
+    }
+}

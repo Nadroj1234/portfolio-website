@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/slides.css">
     <script src="/js/main.js" defer></script>
+    <link rel=""stylesheet" href="/css/cards.css">
 </head>
 <body>
     <header>
@@ -22,6 +23,13 @@
         </nav>
     </header>
     <main>
+        <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>
+                This is a showcase of my work and projects. Feel free to explore and learn more about me.
+            </p>
+        </div>
+
         <div class="slideshow-container">
 
         <!-- Slide 1 -->
@@ -60,12 +68,114 @@
             </div>
 
         </div>
-        <div class="content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>
-                This is a showcase of my work and projects. Feel free to explore and learn more about me.
-            </p>
-        </div>
+        
+
+        <section class="featured-projects" id="featured-projects">
+            <div class="projects-heading">
+                <h2>Featured Projects</h2>
+                <p>Here are some of the projects I've been building.</p>
+            </div>
+
+            <div class="project-cards">
+
+                <!-- PiDog AI -->
+                <article class="project-card">
+                    <img
+                        src="imgs/pidog.webp"
+                        alt="PiDog AI robotics project"
+                        class="project-image"
+                    >
+
+                    <div class="project-content">
+                        <h3>PiDog AI Robot</h3>
+
+                        <p>
+                            An AI-powered robotic dog built with Python
+                            and a Raspberry Pi, exploring voice commands,
+                            robotics, and large language models.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>Raspberry Pi</span>
+                        </div>
+
+                        <a href="html/projects/pidog.html"
+                        class="project-link">
+                            View Project →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- React Game API -->
+                <article class="project-card">
+                    <img
+                        src="imgs/reactgameapi.png"
+                        alt="React Game API project"
+                        class="project-image"
+                    >
+
+                    <div class="project-content">
+                        <h3>React Game API</h3>
+
+                        <p>
+                            A React application that explores game data
+                            and API integration to create a dynamic
+                            and interactive user experience.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>API</span>
+                        </div>
+
+                        <a href="html/projects/reactgame.html"
+                        class="project-link">
+                            View Project →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Number Memory Game -->
+                <article class="project-card">
+                    <img
+                        src="imgs/number-memory-game.png"
+                        alt="Number Memory Game project"
+                        class="project-image"
+                    >
+
+                    <div class="project-content">
+                        <h3>Number Memory Game</h3>
+
+                        <p>
+                            An interactive browser game that challenges
+                            players to remember numbers and test
+                            their memory.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="html/projects/number-memory-game.html"
+                        class="project-link">
+                            View Project →
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="all-projects">
+                <a href="html/projects.html" class="all-projects-link">
+                    View All Projects →
+                </a>
+            </div>
+        </section>
     </main>
 </body>
 </html>
