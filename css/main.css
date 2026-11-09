@@ -100,3 +100,22 @@ li{
     font-weight: bold;
     cursor: pointer;
 }
+
+.main_body_para{
+    font-size: 25px;
+}
+
+.content{
+    text-align: center;
+    
+}
+
+.projects-heading{
+    text-align: center;
+}
+
+.featured-projects-description{
+    font-size: 20px;
+    color: var(--text-color);
+
+}

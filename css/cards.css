@@ -13,8 +13,11 @@
 }
 
 .featured-projects-description{
-    font-size: 20px
+    font-size: 20px;
+    color: var(--text-color);
+
 }
+
 
 .projects-heading {
     text-align: center;
