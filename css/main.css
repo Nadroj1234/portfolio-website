@@ -21,6 +21,28 @@ header{
     background-color: var(--primary-color);
 }
 
+.about_me_div{
+    max-width: 800px;
+    padding: 10px;
+    margin-inline: auto;
+    text-align: center;
+
+}
+
+.certifications_div{
+    max-width: 800px;
+    padding: 10px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.projects_div{
+    max-width: 800px;
+    padding: 10px;
+    margin-inline: auto;
+    text-align: center;
+}
+
 nav{
     display: flex;
     gap: 20px;
