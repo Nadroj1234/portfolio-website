@@ -141,3 +141,62 @@ li{
     color: var(--text-color);
 
 }
+
+.reflections-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 10px;
+}
+ .reflections-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+ .reflection-card {
+    background-color: var(--primary-color);
+    border: 4px solid var(--accent-color);
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+ .reflection-card h2 {
+    color: var(--accent-color);
+    text-align: center;
+}
+ .reflection-date {
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+ .reflection-card p {
+    color: var(--accent-color);
+    font-size: 18px;
+    line-height: 1.6;
+}
+ .reflection-link {
+    display: inline-block;
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-top: 10px;
+}
+ .reflection-link:hover {
+    text-decoration: underline;
+}
+ @media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+     nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+     nav a {
+        font-size: 16px;
+    }
+     .reflection-card {
+        padding: 15px;
+    }
+}
